@@ -110,6 +110,8 @@ func (r *Repository) GetBookByID(context *fiber.Ctx) error {
 
 }
 
+// Routing to handlers
+
 func (r *Repository) SetupRoutes(app *fiber.App) {
 	api := app.Group("/api")
 	api.Post("/create_books", r.CreateBook)
